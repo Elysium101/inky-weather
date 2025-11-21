@@ -5,6 +5,8 @@ This project creates a high-contrast, 7-day weather dashboard displayed on a **P
 
 It fetches live weather data, renders a full HTML dashboard, screenshots it at high resolution, converts it to the Inky colour palette, and displays it automatically on a schedule.
 
+Although the code for this project was written by myself as a learning exercise, the heavy inspiration for this ((I basically copied the look of and the png's for some of the icons) comes from https://github.com/fatihak/InkyPi 
+
 ---
 
 ## ✨ Features
