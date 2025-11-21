@@ -1,9 +1,9 @@
 import requests, json, pathlib
 from datetime import datetime, timedelta
 
-API_KEY = "06c9c15c7b173ebdceb086bb38811cd0"
-LAT = 52.956120066655174
-LON = -1.9844648211217157
+API_KEY = ## Add your Openweather API key
+LAT = ## Add Latitude for weather
+LON = ## Add Longitude for weather
 UNITS = "metric"
 URL = f"https://api.openweathermap.org/data/3.0/onecall?lat={LAT}&lon={LON}&appid={API_KEY}&units={UNITS}"
 AIR_POLLUTION = f"http://api.openweathermap.org/data/2.5/air_pollution?lat={LAT}&lon={LON}&appid={API_KEY}"
@@ -59,4 +59,5 @@ def unix_to_local_time(ts, offset_seconds):
     return dt.strftime("%-I:%M %p")
 
 if __name__ == "__main__":
+
     main()
