@@ -15,9 +15,7 @@ Although the code for this project was written by myself as a learning exercise,
 - Dynamic current conditions (temperature, sunrise, sunset, humidity, wind, pressure, UV index, visibility, AQI)  
 - Dynamic 7-day forecast with icons  
 - High-resolution rendering pipeline  
-  - Renders at 1600×960  
-  - Downscales with LANCZOS  
-  - Sharpens text  
+  - Renders at 800 x 480  
   - Converts to official 7-colour Inky palette  
 - Automatic updates (cron)  
 - Runs completely offline after data fetch  
@@ -29,8 +27,8 @@ Although the code for this project was written by myself as a learning exercise,
 
 1. `fetch_weather.py` fetches updated weather via OpenWeather API.  
 2. A temporary HTTP server serves the `web/` folder.  
-3. `wkhtmltoimage` renders the dashboard at 1600×960.  
-4. `show_screenshot.py` downscales, sharpens, applies palette, and displays the image.  
+3. `wkhtmltoimage` renders the dashboard at 800 x 480
+4. `show_screenshot.py` applies palette, and displays the image.  
 5. A cron job runs this process every 3 hours.
 
 
