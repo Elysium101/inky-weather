@@ -4,7 +4,7 @@
     "temp_c": -1.09,
     "feels_like_c": -3.79,
     "pressure": 1027,
-    "humidity": 83,
+    "humidity": 87,
     "uvi": 0.57,
     "visibility": 10000,
     "wind_speed": 2.05,
@@ -25,7 +25,7 @@
     {
       "day": "Fri",
       "temp_min": -2.14,
-      "temp_max": 1.77,
+      "temp_max": 1.79,
       "icon": "03d",
       "desc": "scattered clouds"
     },
