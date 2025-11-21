@@ -23,30 +23,6 @@ It fetches live weather data, renders a full HTML dashboard, screenshots it at h
 
 ---
 
-## 🛠️ Project Structure
-
-inky-weather/
-│
-├── backend/
-│ ├── fetch_weather.py
-│ ├── run_pipeline.py
-│ ├── show_screenshot.py
-│
-├── web/
-│ ├── index.html
-│ ├── js/app.js
-│ ├── css/style.css
-│ └── assets/icons/
-│
-├── data/
-│ ├── weather.json
-│ └── screenshot.png
-│
-└── README.md
-
-
----
-
 ## 🌤️ How It Works
 
 1. `fetch_weather.py` fetches updated weather via OpenWeather API.  
@@ -58,5 +34,28 @@ inky-weather/
 
 
 📸 Screenshots
-Add photos here.
 
+![PXL_20251121_113543922](https://github.com/user-attachments/assets/0e50b0f9-d225-466a-9b87-40d20ea4b7c9)
+
+
+## 🛠️ Project Structure
+```bash
+inky-weather/
+│
+├── backend/
+│   ├── fetch_weather.py      # Fetches weather + outputs JSON
+│   ├── main.py               # (Optional) service runner
+│   ├── run_pipeline.py       # Full automated pipeline
+│   ├── show_screenshot.py    # High-quality Inky renderer
+│
+├── web/
+│   ├── index.html            # Frontend dashboard
+│   ├── js/app.js             # Dynamic weather logic
+│   ├── css/style.css         # Dashboard styling
+│   └── assets/icons/         # Weather icons
+│
+├── data/
+│   ├── weather.json          # Latest fetched weather
+│   └── screenshot.png        # Rendered dashboard image
+│
+└── README.md
